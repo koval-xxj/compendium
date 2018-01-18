@@ -4,9 +4,6 @@ Vue.component('product-link', {
   template: '#product_link',
   props: {
     oData: Object
-  },
-  created: function () {
-    console.log(this.oData);
   }
 });
 
@@ -24,14 +21,9 @@ var navigate = new Vue({
         params: {product_name: pName}
       }).then(function (response) {
         this.products = response.body;
-
-        //console.log(this.products);
       }, function (error) {
         console.log(error);
       });
-    },
-    select_product: function () {
-      console.log("gffgfdgd");
     }
   },
   watch: {
@@ -114,18 +106,6 @@ Vue.component('item', {
         console.log(error);
       });
 
-    },
-    changeType: function () {
-      if (!this.isFolder) {
-        Vue.set(this.model, 'children', [])
-        this.addChild()
-        this.open = true
-      }
-    },
-    addChild: function () {
-      this.model.children.push({
-        name: 'new stuff'
-      })
     }
   }
 })

@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(E_ALL); // Error engine
+error_reporting(E_ALL);
 
 if (!defined('CONSOLE_ERROR')) {
   define('CONSOLE_ERROR', 'false');
