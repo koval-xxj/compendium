@@ -17,4 +17,12 @@
    * **[functions](includes/functions/):** - общие функции
    * **[libs](includes/libs/):** библиотеки
    * **[app.php](includes/app.php):** - подключение к БД, подключение функций
-   * **[loader.php](includes/loader.php):** - фунция autoload классов
+   * **[loader.php](includes/loader.php):** - autoload классов
+
+
+## Последовательность
+
+* Клонирование файлов на репозиторий
+* Импорт scheme.sql в базу
+* Запуск скрипта parcer.php
+* Отображение результатов на index.html
