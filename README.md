@@ -11,10 +11,10 @@
 * public/ - папка с css и js ресурсами.
 * router.php - файл для приёма api запросов
 
-* **[папка includes](includes/):**
-* ** api/ - контроллеры для обработки api запросов
-* ** classes/ - общие классы
-* ** functions/ - общие функции
-* ** libs/ библиотеки
-* ** app.php - подключение к БД, подключение функций
-* ** loader.php - фунция autoload классов
+* **[includes](includes/):**
+   * **[api](includes/api/):** - контроллеры для обработки api запросов
+   * **[classes](includes/classes/):** - общие классы
+   * **[functions](includes/functions/):** - общие функции
+   * **[libs](includes/libs/):** библиотеки
+   * **[app.php](includes/app.php):** - подключение к БД, подключение функций
+   * **[loader.php](includes/loader.php):** - фунция autoload классов
