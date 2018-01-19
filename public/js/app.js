@@ -70,7 +70,6 @@ Vue.component('item', {
       if (this.model.base) {
         return;
       }
-      console.log(this.dataType);
       if (this.isFolder) {
         this.open = !this.open;
       } else if (this.model.children > 0) {
