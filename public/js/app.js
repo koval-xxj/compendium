@@ -16,7 +16,7 @@ var navigate = new Vue({
   },
   methods: {
     searh_product: function(pName){
-      this.$http.post('/router.php', {
+      this.$http.post('router.php', {
         action: 'search',
         params: {product_name: pName}
       }).then(function (response) {
@@ -94,7 +94,7 @@ Vue.component('item', {
           break;
       }
 
-      this.$http.post('/router.php', {
+      this.$http.post('router.php', {
         action: sAction,
         params: oParms
       }).then(function (response) {
