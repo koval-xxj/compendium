@@ -5,7 +5,6 @@
  */
 require_once 'includes/app.php';
 
-$test = "«рорлр»";
 $inputJSON = file_get_contents('php://input');
 
 
